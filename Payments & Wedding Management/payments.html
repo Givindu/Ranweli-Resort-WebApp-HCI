@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Font awesome -->
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/1.png">
+
+    <!--Links for header and footer-->
+    <link rel="stylesheet" href="header_footer/css/bootstrap.min.css">
+    <link rel="stylesheet" href="header_footer/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="header_footer/css/magnific-popup.css">
+    <link rel="stylesheet" href="header_footer/css/font-awesome.min.css">
+    <link rel="stylesheet" href="header_footer/css/themify-icons.css">
+    <link rel="stylesheet" href="header_footer/css/nice-select.css">
+    <link rel="stylesheet" href="header_footer/css/flaticon.css">
+    <link rel="stylesheet" href="header_footer/css/gijgo.css">
+    <link rel="stylesheet" href="header_footer/css/animate.css">
+    <link rel="stylesheet" href="header_footer/css/slicknav.css">
+    <link rel="stylesheet" href="header_footer/css/style.css">
+
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <style>
+        .cimg {
+            width: 40px;
+        }
+        
+        button.cancel {
+            background-color: white !important;
+        }
+        
+        button.cancel:hover {
+            background-color: rgb(255, 138, 138) !important;
+            border: red;
+            color: white;
+        }
+        
+        p,
+        span,
+        label {
+            font-family: 'Century Gothic';
+        }
+    </style>
+
+    <title>Ranweli</title>
+</head>
+
+<body>
+    <script src="/lib/w3.js"></script>
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area col-md-12 col-sm-6">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active">Menu <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="../Registration/index.php">Home</a></li>
+                                                <li><a href="../Reservation/Activities.php">Activities</a></li>
+                                                <li><a href="resort.html">The Resort</a></li>
+                                                <li><a href="../Booking/HTML/Accomadation.php">Accomodation</a></li>
+                                                <li><a href="../contactus/Environmental.php">Environmental Policies</a></li>
+                                                <li><a href="../contactus/Ayurveda.php">Ayurweda</a></li>
+                                                <li><a href="weddings.html">Weddings</a></li>
+                                                <li><a href="../Reservation/Reservation.php">Reservations</a></li>
+                                                <li><a href="../Reservation/Partners.php">Our Partners</a></li>
+                                                <li><a href="../Reservation/Awards.php">Awards & Recognition</a></li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="#">What's New</a></li>
+                                                <li><a href="../Registration/offers.php">Special Offers</a></li>
+                                                <li><a href="../Booking/HTML/AboutUs.php">About Us</a></li>
+                                                <li><a href="../contactus/contact.php">Contact Us</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="../Booking/HTML/room-details.php">Accomodation</a></li>
+                                        <li><a href="../contactus/contact.php">Contact Us</a></li>
+                                        <li><a href="../Registration/offers.php">Offers</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="../Registration/index.php">
+                                    <img src="header_footer/img/1.png" width="90" height="90" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-4 d-none d-lg-block">
+                            <div class="book_room">
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="book_btn d-none d-lg-block">
+                                    <a href="../Registration/userReg.php">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider d-flex align-items-center justify-content-center  slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>Ranweli Resort</h3>
+                                <p>The Splendour of Nature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>Ranweli Resort</h3>
+                                <p>The Splendour of Nature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>Ranweli Resort</h3>
+                                <p>The Splendour of Nature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>Ranweli Resort</h3>
+                                <p>The Splendour of Nature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div class="pt-5 pb-4">
+        <h1 class="text-center">Payments</h1>
+        <hr>
+    </div>
+    <div class="row p-0 m-0">
+        <div class="container col-md-6 offset-md-3 border pt-5 pr-5 pl-5 pb-4">
+            <section class="module m-0 pb-3">
+                <span class="loadable-icon-and-text">
+                <span class="LOCK loadable-icon-and-text-icon">
+                    <span class> <i class="fa fa-lock" aria-hidden="true"></i>
+                        Your payment is secure. Your card details will not be shared.
+                    </span>
+                </span>
+                </span>
+            </section>
+
+            <form method="post" name="myForm" onsubmit="return validations()">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form">
+                            <input type="tel" name="cardNumber" id="cardNumber" class="cardNumber" required onchange="equals()" />
+                            <label for="cardNumber" class="label-name">
+                                            <span class="content-name">Card number</span>
+                                        </label>
+                            <div class="card-imgs">
+                                <picture id="pic1" style="display: none;">
+                                    <img class="cimg" src="images/paymets/visa.png" alt="visa">
+                                </picture>
+                                <picture id="pic2" style="display: none;">
+                                    <img class="cimg" src="images/paymets/master.png" alt="visa">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form">
+                            <div>
+                                <input type="tel" name="expData" id="expData" class="expDate" onfocus="this.placeholder = 'MM/YYYY'" onblur="this.placeholder=''" required/>
+                                <label for="expData" class="label-name">
+                                                <span class="content-name">Expiration date</span>
+                                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form">
+                            <div>
+                                <!--
+                                <div class="info-box">
+                                    <i class="fa fa-info-circle info" aria-hidden="true"></i>
+                                </div>
+-->
+                                <input type="tel" name="secCode" id="secCode" class="secCode" onfocus="this.placeholder = '3 or 4 digits'" onblur="this.placeholder=''" required/>
+                                <label for="secCode" class="label-name">
+                                                <span class="content-name">Security code</span>
+                                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form">
+                            <div>
+                                <input type="tel" name="firstName" id="firstName" required/>
+                                <label for="firstName" class="label-name">
+                                            <span class="content-name">First name</span>
+                                        </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form">
+                            <div>
+                                <input type="tel" name="lastName" id="lastName" required/>
+                                <label for="lastName" class="label-name">
+                                            <span class="content-name">Last name</span>
+                                        </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <input class="rounded-0" type="checkbox" name="rememberMe" id="rememberMe" required>
+                        <label for="rememberMe">Remeber this card for future use</label>
+                    </div>
+                </div>
+                <br>
+                <div class="buttons">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <button class="btn btn-primary border-2 rounded-0 submit" id="submit" type="button" onclick="validations()">Done</button>
+                            <button class="btn border-primary border-2 rounded-0 cancel" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- footer -->
+    <footer class="footer_">
+        <div>
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-3 col-sm-12 pt-5 text-center">
+                        <div>
+                            <h3 class="mb-4">
+                                <a href="Home.php">
+                                    <img src="header_footer/img/RLogo.jpg" alt="">
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-12 pt-5 text-center">
+                        <div>
+                            <h3 class="mb-4">
+                                Contact Ranweli
+                            </h3>
+                            <ul>
+                                <li><a href="#">Ranweli Holiday Village,Waikkal, Sri Lanka </a></li>
+                                <li><a href="#">Phone: +94 31 2277359</a></li>
+                                <li><a href="#">Fax: +94 31 2277358</a></li>
+                                <li><a href="#">E-Mail: ranweli@slt.lk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-12 pt-5 text-center">
+                        <div>
+                            <h3 class="mb-4">
+                                Facilities
+                            </h3>
+                            <ul>
+                                <li><a href="#">Restaurant and Bars</a></li>
+                                <li><a href="#">Sports Facilities</a></li>
+                                <li><a href="#">Ayurvedic Centre</a></li>
+                                <li><a href="#">Eco/Jewellery Shop</a></li>
+                                <li><a href="#">Beachfront Pool</a></li>
+                                <li><a href="#">Evening Entertainment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-sm-12 pt-5 text-center">
+                        <div>
+                            <h3 class="mb-4">
+                                Facilities
+                            </h3>
+                            <ul>
+                                <li><a href="#">Bird Watching</a></li>
+                                <li><a href="#">Nature Walk</a></li>
+                                <li><a href="#">Cycling</a></li>
+                                <li><a href="#">River Cruise</a></li>
+                                <li><a href="#">Tours Outside Ranweli</a></li>
+                                <li><a href="#">Craft Demonstrations</a></li>
+                                <li><a href="#">Butterfly Watching</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center mt-4">
+                        <p class="copy_right">Copyright © Ranweli Holiday Village 2020. All Rights Reserved.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- JS here -->
+    <script src="header_footer/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="header_footer/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="header_footer/js/popper.min.js"></script>
+    <script src="header_footer/js/bootstrap.min.js"></script>
+    <script src="header_footer/js/owl.carousel.min.js"></script>
+    <script src="header_footer/js/isotope.pkgd.min.js"></script>
+    <script src="header_footer/js/ajax-form.js"></script>
+    <script src="header_footer/js/waypoints.min.js"></script>
+    <script src="header_footer/js/jquery.counterup.min.js"></script>
+    <script src="header_footer/js/imagesloaded.pkgd.min.js"></script>
+    <script src="header_footer/js/scrollIt.js"></script>
+    <script src="header_footer/js/jquery.scrollUp.min.js"></script>
+    <script src="header_footer/js/wow.min.js"></script>
+    <script src="header_footer/js/nice-select.min.js"></script>
+    <script src="header_footer/js/jquery.slicknav.min.js"></script>
+    <script src="header_footer/js/jquery.magnific-popup.min.js"></script>
+    <script src="header_footer/js/plugins.js"></script>
+    <script src="header_footer/js/gijgo.min.js"></script>
+    <script src="header_footer/js/contact.js"></script>
+    <script src="header_footer/js/jquery.ajaxchimp.min.js"></script>
+    <script src="header_footer/js/jquery.form.js"></script>
+    <script src="header_footer/js/jquery.validate.min.js"></script>
+    <script src="header_footer/js/mail-script.js"></script>
+    <script src="header_footer/js/main.js"></script>
+
+
+
+
+    <!--Scripts for form validation and necessary Jquery libraries-->
+    <script src="assets/js/jquery.payform.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
